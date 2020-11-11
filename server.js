@@ -1,7 +1,7 @@
 var express = require("express");
 var path = require("path");
 var fs = require("fs");
-var dbjson = require("/db/db.json");
+var dbjson = require("./db/db.json");
 
 var app = express();
 var PORT = process.env.PORT || 8000;
@@ -20,7 +20,7 @@ app.get('/notes', function(req,res) {
 
 
 app.get('/api/notes', function(req,res) {
-    fs.readFile('/db/db.json', 'utf8', function(err,data) {
+    fs.readFile('./db/db.json', 'utf8', function(err,data) {
         if (err){
             throw err;
         }
@@ -38,7 +38,7 @@ app.post('/api/notes', function(req,res) {
         }
         return JSON.stringify(dbjson);
     }
-    fs.writeFile('/db/db.json', addNewPost(newpost), function(err) {
+    fs.writeFile('./db/db.json', addNewPost(newpost), function(err) {
         if (err){
             throw err;
         }
@@ -53,7 +53,7 @@ app.delete('/api/notes/:id', function(req,res) {
     for(let i=0;i<dbjson.length;i++) {
         dbjson[i].id = i;
     }
-    fs.writeFile('/db/db.json', JSON.stringify(dbjson), function(err) {
+    fs.writeFile('./db/db.json', JSON.stringify(dbjson), function(err) {
         if (err){
             throw err;
         }
