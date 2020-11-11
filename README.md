@@ -41,4 +41,18 @@ I received a lot of help for this app in a study-group session, especially from 
 
 ### Project Accomplishments
 
-[Stopped here to work on .gitignore file with a learning assistant.]
+1. App works as described.
+1. Collaborated with a classmate.
+
+
+### Project Challenges
+1. Solved nitty-gritty paths problem to db.json file.
+
+
+## For Questions and More Information
+
+Contact the developer, Doug Davidoff, at [douglass.davidoff@gmail.com](mailto:douglass.davidoff@gmail.com). Telephone: +1 (203) 522-8533.
+
+More places: [GitHub](https://github.com/dougdavidoff) | [LinkedIn](https://www.linkedin.com/in/dougdavidoff) | [Twitter @davidoffkilter](https://www.twitter.com/davidoffkilter) | [Website & Blog](http://www.dougdavidoff.com)
+
+
